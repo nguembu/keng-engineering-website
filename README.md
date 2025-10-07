@@ -60,22 +60,7 @@ npm run build
 # Preview du build
 npm run preview
 
-js
-colors: {
-  primary: '#1e40af',    // Bleu professionnel
-  secondary: '#dc2626',  // Rouge d'accent
-  accent: '#f59e0b',     // Jaune/Orange
-  dark: '#1f2937',       // Gris foncé
-  light: '#f8fafc'       // Gris clair
-}
-Animations
-Apparition progressive au défilement
 
-Effets de survol sur les cartes et boutons
-
-Transitions fluides entre les pages
-
-Curseur personnalisé qui suit la souris
 
 📞 Contact Keng Engineering
 Téléphone: (237) 676 32 56 05 / 654 25 72 06
