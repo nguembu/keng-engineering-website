@@ -1,16 +1,14 @@
 import React from 'react'
-import Services from '../components/Services'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 
-const ServicesPage = () => {
+const ProjectsPage = () => {
   return (
     <div className="pt-20">
-      <Services />
       <Projects />
       <Contact />
     </div>
   )
 }
 
-export default ServicesPage
+export default ProjectsPage

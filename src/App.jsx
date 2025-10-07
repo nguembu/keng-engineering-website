@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import AboutPage from './pages/AboutPage'
 import ServicesPage from './pages/ServicesPage'
+import ProjectsPage from './pages/ProjectsPage'
 import ContactPage from './pages/ContactPage'
 import CustomCursor from './components/CustomCursor'
 
@@ -17,6 +18,8 @@ function AppContent() {
         return <AboutPage />
       case 'services':
         return <ServicesPage />
+      case 'projects':
+        return <ProjectsPage />
       case 'contact':
         return <ContactPage />
       default:
