@@ -42,6 +42,7 @@ Installation
 bash
 # Cloner le repository
 git clone https://github.com/nguembu/keng-engineering-website.git
+
 cd keng-engineering-website
 
 # Installer les dépendances
@@ -58,36 +59,6 @@ npm run build
 
 # Preview du build
 npm run preview
-📁 Structure du Projet
-text
-src/
-├── components/          # Composants React réutilisables
-│   ├── Header.jsx      # Navigation avec thème toggle
-│   ├── Hero.jsx        # Section d'accueil
-│   ├── About.jsx       # Section À propos
-│   ├── Services.jsx    # Domaines d'expertise
-│   ├── Missions.jsx    # Références et projets
-│   ├── Testimonials.jsx # Témoignages clients
-│   ├── Contact.jsx     # Formulaire de contact
-│   ├── Footer.jsx      # Pied de page
-│   ├── ThemeToggle.jsx # Switch thème clair/sombre
-│   ├── CustomCursor.jsx # Curseur personnalisé
-│   └── AnimatedSection.jsx # Wrapper d'animation
-├── pages/              # Pages de l'application
-│   ├── Home.jsx        # Page d'accueil complète
-│   ├── AboutPage.jsx   # Page À propos
-│   ├── ServicesPage.jsx # Page Services
-│   └── ContactPage.jsx # Page Contact
-├── context/            # Context React
-│   └── ThemeContext.jsx # Gestion du thème
-├── hooks/              # Hooks personnalisés
-│   └── useScrollAnimation.js # Animation au scroll
-├── App.jsx             # Composant principal
-├── main.jsx            # Point d'entrée
-└── index.css           # Styles globaux
-🎨 Personnalisation
-Couleurs du Thème
-Les couleurs de branding sont définies dans tailwind.config.js :
 
 js
 colors: {
