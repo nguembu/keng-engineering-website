@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FiMenu, FiX } from 'react-icons/fi'
 import ThemeToggle from './ThemeToggle'
+import logo from '../assets/logo.jpeg'
 
 const Header = ({ currentPage, setCurrentPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -23,13 +24,22 @@ const Header = ({ currentPage, setCurrentPage }) => {
     <header className="bg-white dark:bg-gray-800 shadow-lg sticky top-0 z-50 transition-colors duration-300">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          {/* Logo */}
-          <div className="flex items-center space-x-3 cursor-pointer" onClick={() => handleNavigation('home')}>
-            <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">KE</span>
+          {/* Logo avec image réelle */}
+          <div 
+            className="flex items-center space-x-3 cursor-pointer group" 
+            onClick={() => handleNavigation('home')}
+          >
+            <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-blue-600 group-hover:border-blue-700 transition-colors duration-300">
+              <img 
+                src={logo} 
+                alt="Keng Engineering Logo" 
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-800 dark:text-white">Keng Engineering</h1>
+              <h1 className="text-xl font-bold text-gray-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                Keng Engineering
+              </h1>
               <p className="text-sm text-gray-600 dark:text-gray-300">Ingénierie & Services Électriques</p>
             </div>
           </div>
