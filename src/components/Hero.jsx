@@ -1,23 +1,11 @@
 import React from 'react'
 import { FiArrowRight, FiCheckCircle } from 'react-icons/fi'
-import logo from '../assets/logo.jpeg'
 
 const Hero = ({ setCurrentPage }) => {
   return (
     <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Logo dans le hero (optionnel) */}
-          <div className="flex justify-center mb-8">
-            <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-white/20">
-              <img 
-                src={logo} 
-                alt="Keng Engineering" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-          
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Leader en <span className="text-yellow-400">Ingénierie</span> et Services Électriques
           </h1>
